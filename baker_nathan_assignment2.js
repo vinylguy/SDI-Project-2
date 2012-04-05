@@ -5,41 +5,39 @@ Deliverable 2
 Cooking "Theme"
 */
 
-var ingredients = ["pork", "shallots", "beer", "garlic", "spices"],
-	chef = "Nathan Baker",
+var chef = "Nathan Baker",
 	recipe = "'Famous Pork Ribs'",
-	temperature = 375
+	temperature = 375,
+	say = function(message) { console.log(message); };
 ;
 
-console.log("Before we start cooking lets check to see if we have enough ingredients.");
+say("Before we start cooking lets check to see if we have enough ingredients.");
 
 // For Loop function
-var amounts = [
-	"6lbs ",
-	"2 large ",
-	"at least 22oz ",
-	"8 cloves ",
-	"assorted "
+var amounts = ["6lbs ", "2 large ", "at least 22oz ", "8 cloves ", "assorted "
+],
+	ingredients = ["pork", "shallots", "beer", "garlic", "spices"
 ];
 for (var i=0, j=ingredients.length; i < j; i++) {
-	console.log( "You will need "+ amounts[i] + ingredients[i]);
+	say( "You will need "+ amounts[i] + ingredients[i]);
 };
 
-// while loop function 
-console.log("Turn the oven on and pre-heat to 375f");
+say("Turn the oven on and pre-heat to 375f");
 
+// while loop function
 var temp = function (currentTemp) {
 		while (currentTemp < 375)
 		{currentTemp += 15};
-		console.log("Current oven temp is: " + currentTemp);
+		ovenTemp = "The oven is pre-heated to " + currentTemp;
+		return ovenTemp;
 };
 
-temp(0);
+var ovenTemp = temp(0);
+say(ovenTemp);
 
-console.log("The oven is pre-heated to the desired temperature.");
+say("Put pan of ingredients into the oven and bake for 3 hours");
 
-
-
+//Boolean comparison
 var tender = [true, false];
 
 
