@@ -11,8 +11,19 @@ var ingredients = ["pork", "shallots", "beer", "garlic", "spices"],
 	temperature = 375
 ;
 
+console.log("Before we start cooking lets check to see if we have enough ingredients.");
 
-
+// For Loop function
+var amounts = [
+	"6lbs ",
+	"2 large ",
+	"at least 22oz ",
+	"8 cloves ",
+	"assorted "
+];
+for (var i=0, j=ingredients.length; i < j; i++) {
+	console.log( "You will need "+ amounts[i] + ingredients[i]);
+};
 
 // while loop function 
 console.log("Turn the oven on and pre-heat to 375f");
@@ -27,8 +38,7 @@ temp(0);
 
 console.log("The oven is pre-heated to the desired temperature.");
 
-// For Loop function
-//for (var temp = 375; temp > 0; temp+=15) {};
+
 
 var tender = [true, false];
 
