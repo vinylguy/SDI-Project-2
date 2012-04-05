@@ -5,19 +5,32 @@ Deliverable 2
 Cooking "Theme"
 */
 
-var ingredients = ["pork", "shallots", "beer", "garlic", "spices"];
-var temp = 0
+var ingredients = ["pork", "shallots", "beer", "garlic", "spices"],
+	chef = "Nathan Baker",
+	recipe = "'Famous Pork Ribs'",
+	temperature = 375
+;
 
 
 
-while (temp <= 375) {
-	console.log("Pre-heating oven to 375f, current temp = " + temp + "f");
-	temp+=5;
+
+// while loop function 
+console.log("Turn the oven on and pre-heat to 375f");
+
+var temp = function (currentTemp) {
+		while (currentTemp < 375)
+		{currentTemp += 15};
+		console.log("Current oven temp is: " + currentTemp);
 };
-console.log("Oven is hot and ready to go");
 
-console.log("Added line of code in my branch");
+temp(0);
 
+console.log("The oven is pre-heated to the desired temperature.");
+
+// For Loop function
+//for (var temp = 375; temp > 0; temp+=15) {};
+
+var tender = [true, false];
 
 
 /* var chef = "Nathan Baker"
