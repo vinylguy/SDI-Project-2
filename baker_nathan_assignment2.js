@@ -5,11 +5,22 @@ Deliverable 2
 Cooking "Theme"
 */
 
-var chef = "Nathan Baker",
-	recipe = "'Famous Pork Ribs'",
+var chef = "Nathan Bakers",
+	recipe = "Famous Pork Ribs",
 	temperature = 375,
 	say = function(message) { console.log(message); };
 ;
+
+//Function w/ 2 strings
+var recipePrep = function () {
+	var a = chef;
+	var b = recipe;
+	c = (a + " " + b);
+	return c;
+};
+
+var c = recipePrep();
+say(c);
 
 say("Before we start cooking lets check to see if we have enough ingredients.");
 
