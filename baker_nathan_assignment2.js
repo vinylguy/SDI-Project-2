@@ -11,6 +11,11 @@ var chef = "Nathan Bakers",
 	say = function(message) { console.log(message); };
 ;
 
+//Procedure
+function displayChef () {
+say(chef);
+};
+
 //Function w/ 2 strings
 var recipePrep = function () {
 	var a = chef;
@@ -30,10 +35,10 @@ var amounts = ["6lbs ", "2 large ", "at least 22oz ", "8 cloves ", "assorted "
 	ingredients = ["pork", "shallots", "beer", "garlic", "spices"
 ];
 for (var i=0, j=ingredients.length; i < j; i++) {
-	say( "You will need "+ amounts[i] + ingredients[i]);
+	say(amounts[i] + ingredients[i]);
 };
 
-say("Turn the oven on and pre-heat to 375f");
+say("Turn the oven on and pre-heat to " + temperature + "f");
 
 // while loop function
 var temp = function (currentTemp) {
